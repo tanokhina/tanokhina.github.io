@@ -1,17 +1,201 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2022-02-09T20:52:06+01:00</updated><id>/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="/jekyll/update/2021/12/26/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2021-12-26T22:38:23+01:00</published><updated>2021-12-26T22:38:23+01:00</updated><id>/jekyll/update/2021/12/26/welcome-to-jekyll</id><content type="html" xml:base="/jekyll/update/2021/12/26/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-16T20:17:50+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Tanya Anokhina</title><subtitle>This is a tale of my design journey</subtitle><author><name>Tetiana Anokhina</name></author><entry><title type="html">Redesigning onboarding app</title><link href="http://localhost:4000/2022-02-22/Appical" rel="alternate" type="text/html" title="Redesigning onboarding app" /><published>2022-02-22T00:00:00+00:00</published><updated>2022-02-22T00:00:00+00:00</updated><id>http://localhost:4000/2022-02-22/Appical</id><content type="html" xml:base="http://localhost:4000/2022-02-22/Appical"><![CDATA[<!--more-->
+<p><a href="https://www.appical.net">appical.net</a></p>
 
-&lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
+<h2 id="about-the-project">About the project</h2>
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;&lt;/p&gt;
+<p>Appical is two-sided B2B2C platform that helps HR managers create onboarding experience for their new hires.</p>
 
-&lt;p&gt;Where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR&lt;/code&gt; is a four-digit number, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MONTH&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DAY&lt;/code&gt; are both two-digit numbers, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MARKUP&lt;/code&gt; is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+<p>The platform consist of two apps. The editor part is for creating onboarding process. And the app for the new hires provides onboarding experience.</p>
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+<h2 id="my-role">My role</h2>
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Tom&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &apos;Hi, Tom&apos; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+<p>I was responsible for the whole design process. From conducting user interviews to gather insights and discover pain points to creating interactive prototypes to test ideas with users.</p>
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated. Jekyll requires blog post files to be named according to the following format: YEAR-MONTH-DAY-title.MARKUP Where YEAR is a four-digit number, MONTH and DAY are both two-digit numbers, and MARKUP is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works. Jekyll also offers powerful support for code snippets: def print_hi(name) puts &quot;Hi, #{name}&quot; end print_hi(&apos;Tom&apos;) #=&amp;gt; prints &apos;Hi, Tom&apos; to STDOUT. Check out the Jekyll docs for more info on how to get the most out of Jekyll. File all bugs/feature requests at Jekyll’s GitHub repo. If you have questions, you can ask them on Jekyll Talk.</summary></entry></feed>
+<p>I closely collaborated with product managements and dev team.</p>
+
+<p><img src="/assets/images/final_product_web_mobile.png" alt="alt text" /></p>
+
+<h2 id="challenge">Challenge</h2>
+
+<p>The app wasn’t easy to use, it had boring look and feel, and many other usability and technical issues. Most of our customers wanted to created an engaging and welcoming experience for new employees. But Appical wasn’t able to satisfy this need. That is why many of our customers didn’t proceed with the product after trial period.</p>
+
+<h2 id="solution">Solution</h2>
+
+<p>We set out to completely overhaul the look and feel of the app. We ran 3 weeks of design sprint based on the design thinking methodology, which includes 5 stages: empathise, define, ideate, prototype and test. We eventually created and shipped a fully functional app where companies can offer the best onboarding experience for their new hires.</p>
+
+<h2 id="process">Process</h2>
+
+<p>I started my process with gathering information.</p>
+
+<p>Together with product manager and another UX designer we interviewed 3 our big customers to find out about their onboarding process. Besides that, we closely collaborated with our sales team to discover the most requested features. As well, we talked to customer onboarding team to hear what struggles the customers have with an existing product.</p>
+
+<h2 id="insights">Insights</h2>
+
+<p>As a result of the research we identified next pain points:</p>
+
+<ul>
+  <li>The app doesn’t have a user friendly navigation.</li>
+  <li>The main screen is very cluttered.</li>
+  <li>Adding company branding is not user-friendly, and missing features like uploading company logo is a big disadvantage.</li>
+  <li>Missing mobile experience.</li>
+</ul>
+
+<p>With focus on these problems, I started my ideation face.</p>
+
+<h2 id="redesigning-navigation">Redesigning navigation</h2>
+
+<p>I begin with sketching out ideas for improving the navigation of the app.</p>
+
+<p>In the old design the main screen was cluttered, and there wasn’t clear guidance for the users where to start. I’ve decided clean up the main page and leave only important elements.</p>
+
+<p><img src="/assets/images/early_sketches.png" alt="alt text" /></p>
+
+<h2 id="wireframes">Wireframes</h2>
+
+<p>Through the wireframes I was able to design user flows, navigation, and interactions. The wireframes went through various rounds of iteration and I worked closely with dev team to determine technical feasibility.</p>
+
+<p><img src="/assets/images/iterations_wireframes.png" alt="alt text" /></p>
+
+<h2 id="a-focus-on-a-journey">A focus on a journey</h2>
+
+<p>We wanted to create an experience that guide people through their journey without distractions.</p>
+
+<hr />
+
+<h2 id="creating-new-brand-settings">Creating new brand settings</h2>
+
+<p>The most requested feature was adding company branding inside the app to create a connection between company and their new hires.</p>
+
+<p>In the old version of a design, user could change a colour of a background, a colour of a text, and add 2 secondary colours.</p>
+
+<p>The problem was that it didn’t give much of a flexibility. And it wasn’t really clear on what elements the 2 secondary colours will be applied. Because of that, the text in some parts of the app became illegible due to colour overlapping.</p>
+
+<p><img src="/assets/images/theming_designs.png" alt="alt text" /></p>
+
+<h2 id="new-settings">New settings</h2>
+
+<p>We come up with the next settings for the theme: the background colour, the button colour, and the title colour. The colour of the text was generated based on the colour of a background. Other elements like icons or lines were connected to the button colour or to the text colour (their colour were generated based on a background colour).</p>
+
+<p><img src="/assets/images/pages_designs.png" alt="alt text" /></p>
+
+<p>I put a lot of effort to check if the new brand settings work well. I created a lot of designs with different colour palettes to see if there wasn’t any colour overlaps.</p>
+
+<p>The new settings gave a much of flexibility to create a true brand of the company inside of the app.</p>
+
+<h2 id="validation">Validation</h2>
+
+<p>On the prototyping stage I conducted a usability testing with users and got my learnings on certain usability issues, so I refined my designs again (and then again after another usability testing).</p>
+
+<p><img src="/assets/images/webplayer_prototype.png" alt="alt text" /></p>
+
+<h2 id="results">Results</h2>
+
+<p>Our team created a new website with a great navigation structure. We aimed for a clean and modern look. We placed a great emphasis on content, and removed everything that could distract. The new branding rules give our customers more flexibility to create a welcoming experience for their new hires.</p>
+
+<p>As a result we were able to increase customer retention and get a new customers like Van Gogh Museum and PepsiCo.</p>]]></content><author><name>Tetiana Anokhina</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Improving checkout process</title><link href="http://localhost:4000/2022-02-21/Improving-checkout-process" rel="alternate" type="text/html" title="Improving checkout process" /><published>2022-02-21T00:00:00+00:00</published><updated>2022-02-21T00:00:00+00:00</updated><id>http://localhost:4000/2022-02-21/Improving-checkout-process</id><content type="html" xml:base="http://localhost:4000/2022-02-21/Improving-checkout-process"><![CDATA[<h2 id="about-the-project">About the project</h2>
+
+<p>Crowdservice is an auction-based job-search mobile app. It enables users post jobs or place bids to win one.</p>
+
+<h2 id="my-role">My role</h2>
+
+<p>I’ve worked with Crowdservice as a UX/UI designer. I helped improve usability of checkout process and redesigned existing navigation to make it intuitive and easy-to-use.</p>
+
+<p>Besides that, I helped to redesign the look and feel of the app.</p>
+
+<p><img src="/assets/images/crowdservice_screens.png" alt="alt text" /></p>
+
+<h2 id="challenge">Challenge</h2>
+
+<p>The app had a number of usability issues that cause users to switch to competitors.</p>
+
+<p>The key functionality like checkout and bidding process were not user friendly. Based on the research data, people mostly give up on those stages.</p>
+
+<h2 id="process">Process</h2>
+
+<p>I’ve started my process with gathering information about the product goals, its users, their pain points and needs. Stepping into the users shoes and using the product by myself, helped me identify usability issues.</p>
+
+<p>In between, I conducted market analysis in order to understand what other projects like ours offers to their customers.</p>
+
+<p>With all needed insights, I rolled my sleeve and started mapping out user flows and sketching ideas with improvements.</p>
+
+<p><img src="/assets/images/app_flows.png" alt="alt text" /></p>
+
+<p>The app has around 7 possible ways to complete a job.
+This part was the most challenging during working on the project. I had to identify and note down the possible pain points that people could face during the process.</p>
+
+<h2 id="issues-i-identified">Issues I identified</h2>
+
+<h3 id="bids-and-active-jobs">Bids and active jobs.</h3>
+
+<p>Problem:</p>
+<ul>
+  <li>Complex informational structure;</li>
+  <li>Multiple levels of information;</li>
+  <li>Visually hard to differentiate job states.</li>
+</ul>
+
+<p>Solution:</p>
+<ol>
+  <li>Added segmented controls;</li>
+  <li>Grouped content;</li>
+  <li>Created visual identity of different states.</li>
+</ol>
+
+<p><img src="/assets/images/problem_1.png" alt="alt text" /></p>
+
+<h3 id="placing-a-bid">Placing a bid.</h3>
+
+<p>Problem:</p>
+
+<ul>
+  <li>Information about fee was hidden from a bidder.</li>
+</ul>
+
+<p>Solution:</p>
+
+<ol>
+  <li>Added details about fees and earning amount.</li>
+</ol>
+
+<p><img src="/assets/images/problem_2.png" alt="alt text" /></p>
+
+<h3 id="job-info-after-placing-a-bid">Job info after placing a bid.</h3>
+
+<p>Problem:</p>
+
+<ul>
+  <li>No clue that the bid has been placed.</li>
+</ul>
+
+<p>Solution:</p>
+
+<ol>
+  <li>Reminder shows amount of a previously placed bid;</li>
+  <li>Added expiry date timer;</li>
+  <li>Highlighted day and time of the job;</li>
+  <li>Text of the button changes to “Bid again”.</li>
+</ol>
+
+<p><img src="/assets/images/problem_3.png" alt="alt text" /></p>
+
+<h2 id="validation">Validation</h2>
+
+<p>It was time to validate assumptions and test the redesigned checkout. With the help of the client, I manage to plan a total of 5 online user testing sessions: 3 with people who want to find someone help with their daily choir, and 2 with people who want to perform these kind of jobs. As a reward we offered an Amazon gift card.</p>
+
+<p>It took me around a week and a half to prepare a script and clickable prototype. My client helped organise and schedule calls with our users.</p>
+
+<p><img src="/assets/images/prototype.png" alt="alt text" /></p>
+
+<p>The testing helped me spot new insights like:</p>
+
+<ul>
+  <li>The info about the bid fee was not clear to people;</li>
+  <li>Labels of statuses were confusing;</li>
+  <li>The cancelation of a job still was confusing.</li>
+</ul>
+
+<p><img src="/assets/images/ios_android.png" alt="alt text" /></p>
+
+<h2 id="results">Results</h2>
+
+<p>10% increase in user engagement within 3 weeks of launch.</p>]]></content><author><name>Tetiana Anokhina</name></author><summary type="html"><![CDATA[About the project]]></summary></entry></feed>
