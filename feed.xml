@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-18T12:25:53+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">tanokhina.github.io</title><subtitle>This is a tale of my design journey</subtitle><author><name>Tetiana Anokhina</name></author><entry><title type="html">Notes from Explore navigation design for iOS - Part 1</title><link href="http://localhost:4000/2022-06-16/Notes-from-Explore-navigation-design-for-iOS-Part-1" rel="alternate" type="text/html" title="Notes from Explore navigation design for iOS - Part 1" /><published>2022-06-16T00:00:00+01:00</published><updated>2022-06-16T00:00:00+01:00</updated><id>http://localhost:4000/2022-06-16/Notes-from-Explore-navigation-design-for-iOS---Part-1</id><content type="html" xml:base="http://localhost:4000/2022-06-16/Notes-from-Explore-navigation-design-for-iOS-Part-1"><![CDATA[<p>Explore navigation design for iOS is WWDC 2022 Session number 10001 by Sarah McClanahan. The session ephasises using familiar navigation patterns. Sarah explains how to use Tab Bar, Navigation, and Modal presentation; best practices; and common pitfalls to avoid.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-18T12:52:39+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">tanokhina.github.io</title><subtitle>This is a tale of my design journey</subtitle><author><name>Tetiana Anokhina</name></author><entry><title type="html">Notes from Explore navigation design for iOS - Part 1</title><link href="http://localhost:4000/2022-06-16/WWDC-Notes" rel="alternate" type="text/html" title="Notes from Explore navigation design for iOS - Part 1" /><published>2022-06-16T00:00:00+01:00</published><updated>2022-06-16T00:00:00+01:00</updated><id>http://localhost:4000/2022-06-16/WWDC-Notes</id><content type="html" xml:base="http://localhost:4000/2022-06-16/WWDC-Notes"><![CDATA[<p>Explore navigation design for iOS is WWDC 2022 Session number 10001 by Sarah McClanahan. The session ephasises using familiar navigation patterns. Sarah explains how to use Tab Bar, Navigation, and Modal presentation; best practices; and common pitfalls to avoid.</p>
 
 <p>Overall it’s a very useful session. Navigation topic could not possibly fit in a single WWDC session, but watching it gives clear and concise overview of how to use existing iOS navigation structure, dos and don’ts, and empasizes user centric approach.</p>
 
@@ -27,11 +27,18 @@
 <p>Well designed tab bar can hint functionality without seing content.</p>
 
 <p>Good examples of tabs are:</p>
-<ul>
-  <li>Listen Now, Browse, Radio, Lirary, Search - hints that this is content-based app, with audio (Music.app).</li>
-  <li>Library, For You, Albums, Search - content-rich app with strong personalization (Photos.app).</li>
-  <li>World Clock, Alarm, Stopwatch, Timer - tabs focused on functionality, self-evident, showing exactly what you can do (Clock.app).</li>
-</ul>
+
+<p><img src="/assets/images/2022-06-16-WWDC-Notes/music-app.jpeg" alt="alt text" /></p>
+
+<p>Listen Now, Browse, Radio, Lirary, Search - hints that this is content-based app, with audio (Music.app).</p>
+
+<p><img src="/assets/images/2022-06-16-WWDC-Notes/photos-app.jpeg" alt="alt text" /></p>
+
+<p>Library, For You, Albums, Search - content-rich app with strong personalization (Photos.app).</p>
+
+<p><img src="/assets/images/2022-06-16-WWDC-Notes/clock-app.jpeg" alt="alt text" /></p>
+
+<p>World Clock, Alarm, Stopwatch, Timer - tabs focused on functionality, self-evident, showing exactly what you can do (Clock.app).</p>
 
 <h3 id="balance-features-throughout-tabs">Balance features throughout tabs</h3>
 
@@ -52,13 +59,21 @@
 
 <p>Create balance by distributing functionality throughout your tabs.</p>
 
+<p><img src="/assets/images/2022-06-16-WWDC-Notes/example-overview.png" alt="alt text" /></p>
+
 <p><em>The example is an app that lets people discover curated cycling routes in cities and create itineraries. With Overview and Settings tabs.</em></p>
 
 <p>Do not be afraid that people won’t discover the rest (beyond the first tab) of your app. It is much easier to understand an app’s functionality when it’s well organized and clearly communicated.</p>
 
 <p>Improve from all the features crammed into the first tab, to clear and straightforward navigation. From a single overwhelming tab to core functionality balanced between tabs, related but distinctly different content and workflows.</p>
 
-<p><em>In the example: Overview, Settings tabs replaced with Places, Iteneraries, Profile</em></p>
+<p><img src="/assets/images/2022-06-16-WWDC-Notes/example-before.png" alt="alt text" /></p>
+
+<p><em>Before: Overview, Settings</em></p>
+
+<p><img src="/assets/images/2022-06-16-WWDC-Notes/example-after.png" alt="alt text" /></p>
+
+<p><em>After: Places, Iteneraries, and Profile</em></p>
 
 <h3 id="how-to-choose-what-to-put-in-a-tab">How to choose what to put in a tab</h3>
 
@@ -66,10 +81,7 @@
 
 <p>Another justification for a tab-bar item is amount of navigation and content in a workflow. The most important content most likely will contain a lot of details, additional content, and navigation alone.</p>
 
-<p>Avoid adding anything that is not related to the content of a tab bar item.</p>
-
-<p>Look for natural relationships.
-<em>In the example: Places -&gt; Cities -&gt; Routes; Iteneraries.</em></p>
+<p>Avoid adding anything that is not related to the content of a tab bar item. Look for natural relationships.</p>
 
 <p>Ask yourself:</p>
 <ul>
@@ -81,6 +93,8 @@
 <p>Communicate your content and functionality clearly, asses where it belongs in your app, and how people engage with it.</p>
 
 <h3 id="avoid-duplicating-functionality-into-a-single-tab">Avoid duplicating functionality into a single tab</h3>
+
+<p><img src="/assets/images/2022-06-16-WWDC-Notes/example-home.png" alt="alt text" /></p>
 
 <p>A tab titled Home may seems like attractive catchall to showcase functionality. Or maybe because people aren’t engaging with some feature, and you worried that people don’t know that functionality exists.</p>
 
@@ -104,11 +118,17 @@
 
 <p>Avoid hidding the tab tab throughout your navigation. Persistent access to the tab bar gives someone the ability to toggle between differernt levels of information while maintaining context in each.</p>
 
-<p><em>In the example: people can can look at a new route in the Places tab, and compare it to an itinerary they’re building, by switching to Itineraries tab.</em></p>
+<p><img src="/assets/images/2022-06-16-WWDC-Notes/example-places.png" alt="alt text" /></p>
+
+<p><img src="/assets/images/2022-06-16-WWDC-Notes/example-itineraries.png" alt="alt text" /></p>
+
+<p><em>People can can look at a new route in the Places tab, and compare it to an itinerary they’re building, by switching to Itineraries tab.</em></p>
 
 <p>This only works when tabs have defined purpose and represent specific categories of content.</p>
 
 <h3 id="use-clear-and-concise-labels">Use clear and concise labels</h3>
+
+<p><img src="/assets/images/2022-06-16-WWDC-Notes/example-slopes.png" alt="alt text" /></p>
 
 <p>Good example is 2022 Apple Desing winner, Slopes app, with Record, Resorts, Logbook, Friends, and Account tabs. Labels are representatives of the content. User lands on the middle tab. Tabs are specific and easy to understand. Record a ski day, browse resorts, logbook for your stats, compare stats with friends - they all represent core functionality with a succinct label.</p>
 
@@ -120,7 +140,7 @@
   <li>Avoid duplicating functionality into a single tab;</li>
   <li>Keep tabs persistent throughout your app;</li>
   <li>Use clear and concide labels.</li>
-</ul>]]></content><author><name>Tetiana Anokhina</name></author><summary type="html"><![CDATA[Explore navigation design for iOS is WWDC 2022 Session number 10001 by Sarah McClanahan. The session ephasises using familiar navigation patterns. Sarah explains how to use Tab Bar, Navigation, and Modal presentation; best practices; and common pitfalls to avoid.]]></summary></entry><entry><title type="html">Redesigning onboarding app</title><link href="http://localhost:4000/2022-02-22/Appical" rel="alternate" type="text/html" title="Redesigning onboarding app" /><published>2022-02-22T00:00:00+00:00</published><updated>2022-02-22T00:00:00+00:00</updated><id>http://localhost:4000/2022-02-22/Appical</id><content type="html" xml:base="http://localhost:4000/2022-02-22/Appical"><![CDATA[<!--more-->
+</ul>]]></content><author><name>Tetiana Anokhina</name></author><summary type="html"><![CDATA[Explore navigation design for iOS is WWDC 2022 Session number 10001 by Sarah McClanahan. The session ephasises using familiar navigation patterns. Sarah explains how to use Tab Bar, Navigation, and Modal presentation; best practices; and common pitfalls to avoid.]]></summary></entry><entry><title type="html">Redesigning onboarding platform</title><link href="http://localhost:4000/2022-02-22/Appical" rel="alternate" type="text/html" title="Redesigning onboarding platform" /><published>2022-02-22T00:00:00+00:00</published><updated>2022-02-22T00:00:00+00:00</updated><id>http://localhost:4000/2022-02-22/Appical</id><content type="html" xml:base="http://localhost:4000/2022-02-22/Appical"><![CDATA[<!--more-->
 <p><a href="https://www.appical.net">appical.net</a></p>
 
 <h2 id="about-the-project">About the project</h2>
