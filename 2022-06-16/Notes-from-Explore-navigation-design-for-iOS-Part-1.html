@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Notes from Explore navigation design for iOS - Part 1 | tanokhina.github.io</title>
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="Notes from Explore navigation design for iOS - Part 1" />
+<meta name="author" content="Tetiana Anokhina" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Explore navigation design for iOS is WWDC 2022 Session number 10001 by Sarah McClanahan. The session ephasises using familiar navigation patterns. Sarah explains how to use Tab Bar, Navigation, and Modal presentation; best practices; and common pitfalls to avoid." />
+<meta property="og:description" content="Explore navigation design for iOS is WWDC 2022 Session number 10001 by Sarah McClanahan. The session ephasises using familiar navigation patterns. Sarah explains how to use Tab Bar, Navigation, and Modal presentation; best practices; and common pitfalls to avoid." />
+<link rel="canonical" href="http://localhost:4000/2022-06-16/Notes-from-Explore-navigation-design-for-iOS-Part-1" />
+<meta property="og:url" content="http://localhost:4000/2022-06-16/Notes-from-Explore-navigation-design-for-iOS-Part-1" />
+<meta property="og:site_name" content="tanokhina.github.io" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-06-16T00:00:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Notes from Explore navigation design for iOS - Part 1" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Tetiana Anokhina","url":"https://tanokhina.github.io"},"dateModified":"2022-06-16T00:00:00+01:00","datePublished":"2022-06-16T00:00:00+01:00","description":"Explore navigation design for iOS is WWDC 2022 Session number 10001 by Sarah McClanahan. The session ephasises using familiar navigation patterns. Sarah explains how to use Tab Bar, Navigation, and Modal presentation; best practices; and common pitfalls to avoid.","headline":"Notes from Explore navigation design for iOS - Part 1","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2022-06-16/Notes-from-Explore-navigation-design-for-iOS-Part-1"},"url":"http://localhost:4000/2022-06-16/Notes-from-Explore-navigation-design-for-iOS-Part-1"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lusitana"/>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="tanokhina.github.io" />
+
+  <!-- Google Analytics-->
+  
+</head>
+
+
+  <body>
+
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">tanokhina.github.io</h2>
+    </a>
+    <ul>
+      <li><a href="/">Posts</a></li>
+      <li><a href="/about">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+    <main>
+      <div class="post">
+  
+
+  <h1 class="post-title">Notes from Explore navigation design for iOS - Part 1</h1>
+  <div class="post-info">
+    
+    
+      16 June 2022 · 
+    
+    
+  </div>
+
+  <p>Explore navigation design for iOS is WWDC 2022 Session number 10001 by Sarah McClanahan. The session ephasises using familiar navigation patterns. Sarah explains how to use Tab Bar, Navigation, and Modal presentation; best practices; and common pitfalls to avoid.</p>
+
+<p>Overall it’s a very useful session. Navigation topic could not possibly fit in a single WWDC session, but watching it gives clear and concise overview of how to use existing iOS navigation structure, dos and don’ts, and empasizes user centric approach.</p>
+
+<p>Large portion of the session is dedicated to tab bars, explains how to choose candidates for tabs, and challenges common practices, like creating a Home tab, hidding tab bar when navigating through a content, or tab-jumps.</p>
+
+<p>You can view full session here: <a href="https://developer.apple.com/videos/play/wwdc2022/10001/">Explore navigation design for iOS</a>.</p>
+
+<p>This are my notes, highlighting most important things, that I would love to keep as a quick refresher for myself or anyone designing navigation.</p>
+
+<h2 id="navigation-overview">Navigation Overview</h2>
+
+<p>Great navigation is often unnoticed because people are able to focus on content and experience. Navigation involves teaching people about how things behave, where things belong, and how things work in your app.</p>
+
+<p>The goal of navigaiton is to provide enough of a foundation of familiarity so that people can easily discover your content and interact with your app.</p>
+
+<p>Navigation should not deviate from expectation and match natural understanding of the world.</p>
+
+<h2 id="tab-bars">Tab Bars</h2>
+
+<h3 id="use-tabs-to-reflect-information-hierarchy">Use tabs to reflect information hierarchy</h3>
+
+<p>Tab bars are a global navigation control, categorizing an app into different sections. The tab bar represents top-level content, should be the top of your app’s hierarchy.</p>
+
+<p>UI must translate into clear groups to establish relations between different areas of your app. Each tab must be meaningful and descriptive.</p>
+
+<p>Well designed tab bar can hint functionality without seing content.</p>
+
+<p>Good examples of tabs are:</p>
+<ul>
+  <li>Listen Now, Browse, Radio, Lirary, Search - hints that this is content-based app, with audio (Music.app).</li>
+  <li>Library, For You, Albums, Search - content-rich app with strong personalization (Photos.app).</li>
+  <li>World Clock, Alarm, Stopwatch, Timer - tabs focused on functionality, self-evident, showing exactly what you can do (Clock.app).</li>
+</ul>
+
+<h3 id="balance-features-throughout-tabs">Balance features throughout tabs</h3>
+
+<p>Oftern the first tab is overloaded with features.</p>
+
+<p>Reasons to add content on one tab:</p>
+<ul>
+  <li>Available at a glance;</li>
+  <li>App evolved over time and lost sight of groupping functionality into sections.</li>
+</ul>
+
+<p>Downsides of adding content on one tab:</p>
+<ul>
+  <li>People need to scroll a lot to find what they looking for;</li>
+  <li>It takes effort to mentally parse unrelated, disparate features;</li>
+  <li>Features competing for screen space.</li>
+</ul>
+
+<p>Create balance by distributing functionality throughout your tabs.</p>
+
+<p><em>The example is an app that lets people discover curated cycling routes in cities and create itineraries. With Overview and Settings tabs.</em></p>
+
+<p>Do not be afraid that people won’t discover the rest (beyond the first tab) of your app. It is much easier to understand an app’s functionality when it’s well organized and clearly communicated.</p>
+
+<p>Improve from all the features crammed into the first tab, to clear and straightforward navigation. From a single overwhelming tab to core functionality balanced between tabs, related but distinctly different content and workflows.</p>
+
+<p><em>In the example: Overview, Settings tabs replaced with Places, Iteneraries, Profile</em></p>
+
+<h3 id="how-to-choose-what-to-put-in-a-tab">How to choose what to put in a tab</h3>
+
+<p>Great apps have focused solutions, aiming to do a few things very well, opposed to solving everything. To achive this - extract in a tab the content that people care about the most.</p>
+
+<p>Another justification for a tab-bar item is amount of navigation and content in a workflow. The most important content most likely will contain a lot of details, additional content, and navigation alone.</p>
+
+<p>Avoid adding anything that is not related to the content of a tab bar item.</p>
+
+<p>Look for natural relationships.
+<em>In the example: Places -&gt; Cities -&gt; Routes; Iteneraries.</em></p>
+
+<p>Ask yourself:</p>
+<ul>
+  <li>What is this content;</li>
+  <li>How people will use it;</li>
+  <li>Where can I dedicate a place for them in my app.</li>
+</ul>
+
+<p>Communicate your content and functionality clearly, asses where it belongs in your app, and how people engage with it.</p>
+
+<h3 id="avoid-duplicating-functionality-into-a-single-tab">Avoid duplicating functionality into a single tab</h3>
+
+<p>A tab titled Home may seems like attractive catchall to showcase functionality. Or maybe because people aren’t engaging with some feature, and you worried that people don’t know that functionality exists.</p>
+
+<p>Avoid repeating functionality as a way to encourage engagement by increasing visibility.  Likewise, avoid duplicating actions of one content on other’s content tabs.</p>
+
+<p><em>In the example: remove “New Itenerary” action, from the Places list, because Iteneraries is a separate tab.</em></p>
+
+<p>In many scenarios it makes sense to present same content on different tabs. But if it’s your app functionality, actions that people take to achieve things, redundancy creates confusion.</p>
+
+<p>In practice, Home tabs disrupt an app’s functionality. Home becomes the tab where every feature fighting for real estate.</p>
+
+<p>Home tab trying to solve a problem of discoverability creates disassociation between understanding content and how to act on it.</p>
+
+<p>Redundancy of feaures prohibits people from understanding where things belong and why.</p>
+
+<h3 id="keep-tabs-persistent-throughout-your-app">Keep tabs persistent throughout your app</h3>
+
+<p>Home tab, and duplicating features, may cause tab-jump because the action exists in another tab too.</p>
+
+<p>Tab-jump is transporting someone to another tab by tapping on an element withing a content view. This is jarring and disorienting and must be avoided.</p>
+
+<p>Avoid hidding the tab tab throughout your navigation. Persistent access to the tab bar gives someone the ability to toggle between differernt levels of information while maintaining context in each.</p>
+
+<p><em>In the example: people can can look at a new route in the Places tab, and compare it to an itinerary they’re building, by switching to Itineraries tab.</em></p>
+
+<p>This only works when tabs have defined purpose and represent specific categories of content.</p>
+
+<h3 id="use-clear-and-concise-labels">Use clear and concise labels</h3>
+
+<p>Good example is 2022 Apple Desing winner, Slopes app, with Record, Resorts, Logbook, Friends, and Account tabs. Labels are representatives of the content. User lands on the middle tab. Tabs are specific and easy to understand. Record a ski day, browse resorts, logbook for your stats, compare stats with friends - they all represent core functionality with a succinct label.</p>
+
+<h2 id="recap">Recap</h2>
+
+<ul>
+  <li>Use tabs to reflect information hierarchy;</li>
+  <li>Balance features throughout tabs;</li>
+  <li>Avoid duplicating functionality into a single tab;</li>
+  <li>Keep tabs persistent throughout your app;</li>
+  <li>Use clear and concide labels.</li>
+</ul>
+
+</div>
+
+
+
+<div class="pagination">
+  
+  
+    <a href="/2022-02-22/Appical" class="right arrow">&#8594;</a>
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+    </main>
+
+    <footer>
+  <span>
+    &copy; <time datetime="2022-06-18 12:25:53 +0100">2022</time> Tetiana Anokhina.
+  </span>
+</footer>
+
+  </body>
+</html>
